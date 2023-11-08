@@ -13,7 +13,7 @@ type Props = {
 export default function MediaItem({ data, onClick }: Props) {
   const imageUrl = useLoadImage(data);
   const handleClick = () => {
-    if (onclick) {
+    if (onClick) {
       return onClick(data.id);
     }
   };
